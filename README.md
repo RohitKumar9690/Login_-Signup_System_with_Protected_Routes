@@ -85,6 +85,8 @@ PORT=
 MONGO_URL=
 SECRET_KEY=
 CORS_URL=
+```
+
 5. **Install frontend dependencies** by running `npm install` inside the `frontend` directory.
 6. **Start the backend server** and **frontend server** to see the app running locally.
 
