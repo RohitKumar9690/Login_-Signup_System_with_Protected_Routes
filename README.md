@@ -66,17 +66,10 @@ A secure and scalable user authentication system built with **React**, **Redux T
 - **`config/`**: Contains the `.env` file and other configuration files.
   - The `.env` file stores environment variables like the MongoDB connection URL, secret JWT key, and the port for the server.
   - This folder may contain additional configuration files for connecting to services (e.g., database, external APIs).
-  - - **`env-file/`**:-
-    - PORT=
-  MONGO_URL=
-SECRET_KEY=
-CORS_URL=
-
 
 - **`middleware/`**: Middleware for authentication, validation, etc.
   - Custom middleware functions to validate JWT tokens, check if a user is authenticated, or validate request data (e.g., ensure that the email format is correct).
 
-- **
 ---
 
 
@@ -85,8 +78,15 @@ CORS_URL=
 1. **Clone the repository** to your local machine.
 2. **Install backend dependencies** by running `npm install` inside the `server` directory.
 3. **Set up environment variables** by creating a `.env` file in the `server/config/` folder.
-4. **Install frontend dependencies** by running `npm install` inside the `frontend` directory.
-5. **Start the backend server** and **frontend server** to see the app running locally.
+4. Create a `.env` file inside the `server/config/` folder and add the following content:
+
+```env
+PORT=
+MONGO_URL=
+SECRET_KEY=
+CORS_URL=
+5. **Install frontend dependencies** by running `npm install` inside the `frontend` directory.
+6. **Start the backend server** and **frontend server** to see the app running locally.
 
 This section provides clear instructions for anyone who wants to clone the repository and set up the project on their own machine.
 
